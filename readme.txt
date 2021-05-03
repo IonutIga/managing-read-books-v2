@@ -1,1 +1,1 @@
-This app enables you to manage read books.
+This app enables you to manage read books!
