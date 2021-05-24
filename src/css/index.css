@@ -1,0 +1,103 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #faf6dc;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    min-height: 58.5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.intro{
+    padding-top:2%;
+    padding-bottom: 2%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color:#897853 ;
+}
+
+.login-form{
+    background-color: #897853;
+    width: 30%;
+    height: 50%;
+    margin-top: 3%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.login-form .login-header{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.login-form #log{
+    text-decoration: underline;
+    color:#2c1e09; 
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.login-form #reg:hover{
+    cursor: pointer;
+}
+
+.login-form .login-content{
+    padding-top: 10%;
+}
+
+.login-form input{
+    border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+    color: white;
+    width: 70%;
+    margin-bottom: 5%;
+    outline: none;
+}
+
+.login-form #login-submit{
+    border:none;
+	padding:13px 20px;
+	border-radius:25px;
+	background:#2c1e09;
+    color: white;
+    width: 50%;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.596);
+}
+ 
+
+
+ /* Footer */
+
+footer {
+    background-color: #383838;
+    color: #CBCDCB;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+
+footer .copyright{
+    text-align: center;
+    font-size: 85%;
+    padding: 1%;
+}

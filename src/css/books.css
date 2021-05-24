@@ -1,0 +1,116 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #faf6dc;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    min-height: 82.5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main .panel{
+    background-color: #897853;
+    width: 15%;
+    font-size: 22px;
+    padding-left: 5%;
+    padding-top: 3%;
+    color:white;
+    height: auto;
+}
+
+.panel .header-panel span{
+    border-bottom: 2px solid #5a3f26;
+    font-weight: bold;
+}
+
+main ul{
+    list-style-type:none;
+}
+
+main ul li{
+    padding-bottom: 10%;
+    cursor: pointer;
+}
+
+main .books-list{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 90vh;
+}
+
+main .book-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 45%;
+    text-align: center;
+    padding-top: 3%;
+    background: url("../assets/images/book.png") no-repeat 55% 10%;
+    background-size: 70%;
+}
+
+main .book-item .book-info{
+    display: flex;
+    flex-direction: column;
+    color: #897853;
+    font-size: 25px;
+    width: 35%;
+    padding-left: 10%;
+    padding-bottom: 30px;
+    word-wrap: break-word;
+}
+
+main .book-item #title{
+    padding-bottom: 10%;
+    font-weight: bold;
+    color: #5a3f26;
+}
+
+
+main .book-item .book-buttons{
+    border:none;
+    border-radius:25px;
+    color: white;
+    width: 40%;
+    cursor: pointer;
+    padding-left: 10%;
+}   
+
+main .book-item .book-buttons button{
+    background-color: #897853;
+    color: white;
+    border: none;
+    padding: 3%;
+    cursor: pointer;
+    margin-right: 4%;
+}
+
+ /* Footer */
+
+ footer {
+    background-color: #383838;
+    color: #CBCDCB;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+}
+
+footer .copyright{
+    text-align: center;
+    font-size: 85%;
+    padding: 1%;
+}
