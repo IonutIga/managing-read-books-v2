@@ -44,7 +44,7 @@ if ($check > 1)
 		   :comment ?x;
 		   :favourite ?y.
 	}';	
-	print $clientUpdate->update($interogareUpdate);
+	print $clientUpdate->update($interogareUpdate)->getStatus();
 }
 else {
 	// se sterg atat cartea, cat si orice relatie legata de ea
@@ -74,7 +74,7 @@ prefix : <http://danielionut.ro#>
 		 ?anonym ?w ?q.
 	}';
 	
-	print $clientUpdate->update($interogareUpdate);
+	print $clientUpdate->update($interogareUpdate)->getStatus();
 }
 
 ?>

@@ -28,8 +28,18 @@
             function procesareRaspuns(raspuns) {
                 document.getElementById('det').innerText = raspuns.title;
                 document.getElementById('author').innerText = raspuns.author;
+                document.getElementById('year').innerText = raspuns.year;
                 document.getElementById('category').innerText = raspuns.genre;
+                if(raspuns.favourite == "true"){
+                    document.getElementById('isFavourite').innerText = 'Yes';
+                    console.log(raspuns.favourite); 
+                }else{
+                    document.getElementById('isFavourite').innerText = 'No';
+                    console.log(raspuns.favourite);
+                }
+
                 document.getElementById('comment').innerText = raspuns.comment;
+                
                 var idBookHidden = document.getElementById('hidden-id');
                 idBookHidden.setAttribute('value', raspuns.id);
             }
@@ -76,11 +86,24 @@
                         <span id="author"> </span>
                     </div>
                     <div class="info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                        <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                    </svg> Published year:          
+                        <span id="year"></span>
+                    </div><br>
+                    <div class="info">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="black" class="bi bi-bookmark" viewBox="0 0 16 16">
                             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
                         </svg> Book category:          
                         <span id="category"></span>
                     </div><br>
+                    <div class="info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                    </svg> Is one of favourites books: 
+                        <span id="isFavourite"></span>   
+                    </div>
                     <div class="info">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="black" class="bi bi-pencil-square" viewBox="0 0 16 16">
                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>

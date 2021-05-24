@@ -27,7 +27,6 @@ main {
     background-color: #897853;
     width: 45%;
     height: 50%;
-    margin-top: 5%;
     padding-top: 2%;
     margin-bottom: 5%;
     text-align: center;
@@ -41,7 +40,7 @@ main {
 
 .insert-form #ins{
     text-decoration: underline;
-    color:#2c1e09; 
+    color: white; 
     font-size: 25px;
     font-weight: 700;
 }
@@ -61,6 +60,10 @@ main {
     width: 70%;
     margin-bottom: 5%;
     outline: none;
+}
+
+.insert-form #fav{
+    width: 20%;
 }
 
 .insert-form option{

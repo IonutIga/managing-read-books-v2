@@ -22,7 +22,8 @@ main .panel{
     background-color: #897853;
     width: 15%;
     font-size: 22px;
-    padding-left: 5%;
+    padding-left: 4%;
+    padding-right: 3%;
     padding-top: 3%;
     color:white;
     height: auto;
@@ -31,6 +32,14 @@ main .panel{
 .panel .header-panel span{
     border-bottom: 2px solid #5a3f26;
     font-weight: bold;
+    border-bottom: 2px;
+    padding:6px;
+    text-align: center;
+}
+
+.panel .header-panel span:hover{
+    background-color: #7a6c4c;
+    color: white;
 }
 
 main ul{
@@ -40,6 +49,10 @@ main ul{
 main ul li{
     padding-bottom: 10%;
     cursor: pointer;
+}
+
+main ul li:hover{
+    color: rgb(255, 237, 199);
 }
 
 main .books-list{
@@ -60,7 +73,7 @@ main .book-item{
     text-align: center;
     padding-top: 3%;
     background: url("../assets/images/book.png") no-repeat 55% 10%;
-    background-size: 70%;
+    background-size: 110%;
 }
 
 main .book-item .book-info{
@@ -70,12 +83,12 @@ main .book-item .book-info{
     font-size: 25px;
     width: 35%;
     padding-left: 10%;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     word-wrap: break-word;
 }
 
 main .book-item #title{
-    padding-bottom: 10%;
+    padding-bottom: 4%;
     font-weight: bold;
     color: #5a3f26;
 }
@@ -98,6 +111,11 @@ main .book-item .book-buttons button{
     cursor: pointer;
     margin-right: 4%;
 }
+
+main #content{
+    display: flex;
+    flex-direction: column;
+} 
 
  /* Footer */
 
